@@ -1,0 +1,5 @@
+pip install requests
+pip install python-dotenv
+npm i dotenv
+pip install flask openai Flask-CORS colorthief
+pip install Flask
