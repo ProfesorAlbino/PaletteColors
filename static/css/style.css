@@ -1,0 +1,77 @@
+body {
+    background-color: #f8f9fa;
+    min-height: 100vh;
+}
+.color-card {
+    border-radius: 8px;
+    height: 160px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+.color-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+.color-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(255,255,255,0.9);
+    padding: 10px;
+    color: #333;
+    transition: opacity 0.3s ease;
+}
+.copy-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: rgba(255,255,255,0.8);
+    border: none;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+.color-card:hover .copy-btn {
+    opacity: 1;
+}
+.header {
+    background: linear-gradient(135deg, #6B73FF 0%, #000DFF 100%);
+    color: white;
+    padding: 2rem 0;
+    margin-bottom: 2rem;
+}
+.form-control:focus {
+    box-shadow: 0 0 0 0.25rem rgba(107, 115, 255, 0.25);
+    border-color: #6B73FF;
+}
+.btn-primary {
+    background-color: #444BFE;
+    border-color: #444BFE;
+}
+.btn-primary:hover, .btn-primary:focus {
+    background-color: #000DFF;
+    border-color: #000DFF;
+}
+.copied-toast {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1050;
+}
+#loading {
+    display: none;
+}
+.color-name {
+    font-weight: 600;
+    text-transform: capitalize;
+    margin-bottom: 2px;
+}
